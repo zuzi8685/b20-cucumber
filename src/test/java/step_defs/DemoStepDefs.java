@@ -72,14 +72,7 @@ public class DemoStepDefs {
         dhf.confirm.click();
 
 
-
-
-
-
     }
-
-
-
 
 }
 
