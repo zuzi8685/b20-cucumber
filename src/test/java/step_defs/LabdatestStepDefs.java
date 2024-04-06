@@ -37,6 +37,9 @@ public class LabdatestStepDefs {
     @When("I fill out the form")
     public void i_fill_out_the_form() {
         lhp = new LamdatestHomePage(driver);
+        driver= DriverUtils.getDriver("chrome");
+        String url= ConfigUtils.getConfigProp("labda_url");
+        driver.get(url);
     }
         @Then("I should see success message")
         public void i_should_see_success_message() {
